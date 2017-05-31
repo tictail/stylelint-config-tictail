@@ -6,7 +6,7 @@ This is the stylelint config we use at Tictail.
 
 ## Install
 ```
-npm i eslint-stylelint-tictail -D
+npm i stylelint-config-tictail -D
 ```
 
 ## Usage
