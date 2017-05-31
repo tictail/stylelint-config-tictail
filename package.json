@@ -1,0 +1,40 @@
+{
+  "name": "stylelint-config-tictail",
+  "version": "1.0.0",
+  "description": "Stylelint config used by Tictail",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tictail/stylelint-config-tictail.git"
+  },
+  "homepage": "https://github.com/tictail/stylelint-config-tictail",
+  "bugs": "https://github.com/tictail/stylelint-config-tictail/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-tictail": "~1.0.0",
+    "prettier": "^1.3.1",
+    "stylelint": "~7.10.1"
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "lint-fix": "eslint *.js --fix",
+    "release": "npmpub"
+  },
+  "eslintConfig": {
+    "extends": [
+      "stylelint"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  }
+}

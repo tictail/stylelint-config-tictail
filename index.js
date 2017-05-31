@@ -1,17 +1,15 @@
 module.exports = {
-  'plugins': [
-    'stylelint-scss',
-  ],
-  'rules': {
+  plugins: ['stylelint-scss'],
+  rules: {
     'at-rule-blacklist': ['debug'],
     'at-rule-no-vendor-prefix': true,
-    'at-rule-empty-line-before': ['always', {
-      except: [
-        'blockless-after-same-name-blockless',
-        'first-nested',
-      ],
-      ignore: ['after-comment'],
-    }],
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['blockless-after-same-name-blockless', 'first-nested'],
+        ignore: ['after-comment'],
+      },
+    ],
     'block-no-empty': true,
     'block-opening-brace-space-before': 'always',
     'block-closing-brace-empty-line-before': 'never',
@@ -32,13 +30,11 @@ module.exports = {
     'declaration-colon-space-after': 'always-single-line',
     'declaration-colon-space-before': 'never',
     'declaration-property-value-blacklist': {
-      '/^border/': [
-        'none',
-      ],
+      '/^border/': ['none'],
     },
     'function-comma-space-after': 'always-single-line',
     'function-url-quotes': 'always',
-    'indentation': 2,
+    indentation: 2,
     'length-zero-no-unit': true,
     'max-nesting-depth': 4,
     'max-empty-lines': 1,
@@ -53,12 +49,8 @@ module.exports = {
     'rule-empty-line-before': [
       'always-multi-line',
       {
-        'except': [
-          'first-nested',
-        ],
-        'ignore': [
-          'after-comment',
-        ],
+        except: ['first-nested'],
+        ignore: ['after-comment'],
       },
     ],
     'scss/at-extend-no-missing-placeholder': true,
