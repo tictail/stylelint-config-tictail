@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-tictail",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stylelint config used by Tictail",
   "keywords": [
     "stylelint",
@@ -21,11 +21,14 @@
   "devDependencies": {
     "eslint": "~3.19.0",
     "eslint-config-tictail": "~1.0.0",
+    "jest": "~20.0.4",
     "prettier": "~1.3.1",
-    "stylelint": "~7.10.1"
+    "stylelint": "~7.10.1",
+    "stylelint-scss": "~1.4.4"
   },
   "scripts": {
-    "lint": "eslint *.js",
-    "lint-fix": "eslint *.js --fix"
+    "lint": "eslint ./ --max-warnings 0 --ext .js",
+    "lint-fix": "eslint ./ --max-warnings 0 --ext .js --fix",
+    "test": "jest"
   }
 }

@@ -6,7 +6,13 @@ This is the stylelint config we use at Tictail.
 
 ## Install
 ```
-npm i stylelint-config-tictail -D
+npm install stylelint-config-tictail -D
+```
+
+## Development
+Edit the `index.js` file and run/update
+```
+npm test
 ```
 
 ## Usage
